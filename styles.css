@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Hanken Grotesk";
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.container_card{
+    background-color:white;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+}
+
+.card_one{
+    background-image: linear-gradient(to top,hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+    border-radius: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.title{
+    font-size: 18px;
+    color:hsl(0, 0%, 100%, 70%);
+    margin: 30px;
+    
+}
+
+.circle{
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(to top,hsla(241, 72%, 46%, 0),hsla(256, 72%, 46%, 1));
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_one-number{
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.card_one-text{
+     color: hsl(0, 0%, 100%, 70%);
+}
+
+
+.container_card-secondSection{
+    text-align: center;
+    padding: 25px;
+}
+
+.card_one-secondTitle{
+    color: white;
+    font-size: 30px;
+}
+
+.container_card-secondSection > p{
+    padding: 20px;
+    color:hsl(0, 0%, 100%, 70%); 
+}
+
+.card_two{
+    background-color: hsl(0, 0%, 99%);
+    width: 50%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    gap: 30px;
+}
+
+.card_two > p{
+    color: hsl(224, 30%, 27%);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.principal_containerTwo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container_sections{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    border-radius: 10px;
+    height: 60px;
+    align-items: center;
+    gap: 70px;
+}
+
+
+
+.first{
+    background:hsl(0, 100%, 67%, 10%);
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+
+.second{
+    background:  hsl(39, 100%, 56%, 10%);
+    color: hsl(39, 100%, 56%);
+    font-weight: 700;
+}
+
+.third{
+    background: hsl(166, 100%, 37%, 10%);
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+}
+
+.fourth{
+    background: hsl(234, 85%, 45%, 10%);
+    color: hsl(234, 85%, 45%); 
+    font-weight: 700;
+}
+
+img{
+    float: inline-start;
+}
+
+.container_subtitles{
+    padding-left: 9px;
+}
+
+button{
+    font: inherit 18px;
+    color: white;
+    background-color:hsl(224, 30%, 27%);
+    border-radius: 60px;
+    height: 50px;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to top,hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+}
+
+@media(width<=775px){
+    body{
+        padding: 0 auto;
+    }
+    .container_card{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
